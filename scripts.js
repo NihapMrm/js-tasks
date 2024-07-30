@@ -10,7 +10,7 @@ function getById(id) {
 
 // TASK 01
 function changeName() {
-    document.getElementById("title").innerHTML = "Sri Lanka Youth Center";
+    document.getElementById("title").innerHTML = "Welcome to Task 01";
 }
 
 // TASK 02
