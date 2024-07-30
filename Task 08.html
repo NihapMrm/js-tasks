@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tasks</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <style>
+        button{
+            width: 100%;
+            padding: 5px;
+        }
+
+        </style>
+    <div class="card-container">
+        <div class="header">
+            <h2>Task 08</h2>
+            <div class="actions">
+                <div class="minimize">-</div>
+                <div class="close">X</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="task3">
+                <table>
+                    <tr>
+                        <td><label for="num1">Enter Your 1st Number</label></td>
+                        <td><input type="number" id="num1" name="num1"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="num2">Enter Your 2nd Number</label></td>
+                        <td><input type="number" id="num2" name="num2"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="max">Maximum Number</label></td>
+                        <td><input type="text" id="max" name="max" readonly disabled></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td> 
+                            <button onclick="maxNumber()">Calculate</button>
+                     </td>
+                    </tr>
+                </table>
+
+            </div><br>
+           
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tasks</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <style>
+        button{
+            width: 100%;
+            padding: 5px;
+        }
+    </style>
+    <div class="card-container">
+        <div class="header">
+            <h2>Task 07</h2>
+            <div class="actions">
+                <div class="minimize">-</div>
+                <div class="close">X</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="task3">
+                <table>
+                    <tr>
+                        <td><label for="mark1">Enter Your Tamil Marks</label></td>
+                        <td><input type="number" id="mark1" name="mark1"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="mark2">Enter Your English Marks</label></td>
+                        <td><input type="number" id="mark2" name="mark2"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="mark3">Enter Your ICT Marks</label></td>
+                        <td><input type="number" id="mark3" name="mark3"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="total">Total</label></td>
+                        <td><input type="number" id="total" name="total" readonly disabled></td>
+                    </tr>
+                    <tr>
+                        <td><label for="avg">Average</label></td>
+                        <td><input type="number" id="avg" name="avg" readonly disabled></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="result">Result</label></td>
+                        <td><input type="text" id="result" name="result" readonly disabled></td>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            <button onclick="examResult()">Result</button>
+                        </td>
+                       
+                        <td> 
+                           
+                           
+                            <button>Exit</button>
+                    
+                        </td>
+                    </tr>
+                </table>
+
+            </div><br>
+           
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+.header {
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+}
+
+.minimize {
+    background-color: green;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ 
+.close {
+    background-color: red;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+.card-container {
+    border: 1px solid black;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.card {
+    margin: 0 60px;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+.change-btn {
+    text-align: right;
+}
+
+label {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+h3 {
+    display: inline-block;
+    width: 190px;
+    margin: 0;
+}
+
+
+
+.btn {
+    text-align: right;
+}
+
+.btn button {
+    width: 100px;
+}
+
+button{
+    padding: 5px;
+    border-radius: 0;
+    border:1px solid gray;
+}
+
+

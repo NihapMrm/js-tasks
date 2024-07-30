@@ -1,0 +1,145 @@
+<!DOCTYPE.html>
+<html>
+<head>
+   <title>TASK 11</title>
+   <style>
+      .card-container{
+         border:1px solid black;
+      }
+      html{
+         margin-left:30%;
+         margin-right:30%; 
+         
+      }
+      .header{
+         background-color:blue;
+         color:wight;
+         display:flex;
+         justify-content:space-between;
+      }
+      h2{
+         margin:0;
+         color:white;
+      }
+      .margin{
+         margin-left:20px;
+         margin-right:20px; 
+      }
+      .actions{
+         display:flex;
+         justify-content:space-between;
+         width:150px;
+      }
+      .minimize{
+         background-color:green;
+         color:white;
+         width:50px;
+         display:flex;
+         align-items:center;
+         justify-content:center;
+      }
+      .close{
+         background-color:red;
+         color:white;
+         width:50px;
+         display:flex;
+         align-items:center;
+         justify-content:center;
+      }
+      .card{
+         margin:0 50px;
+         padding:20px 0;
+      }
+      input{
+         width:100px;
+      }
+      .btn{
+         text-align:right;
+      }
+      button{
+         width:100px;
+         padding:5px;
+      }
+      lable{
+         display:inline-block;
+         font-size:17px bold;
+      }
+      .m{
+         margin-top:10px;
+      }
+      input{
+         margin-top:5px;
+         margin-left:35px;
+         text-align:center;
+      }
+   </style>
+   <script>
+    function checkNumber() {
+       var marks = parseInt(document.getElementById('marks').value);
+   
+       if(0 > marks || marks > 100){
+          alert('marks is most be 0-100');
+             }else if(marks >= 75){
+                grade ='A';
+                color = 'red';
+                statement = 'EXCELLENT';
+             }else if(marks >= 65){
+                grade ='B';
+                color = 'green';
+                statement = 'VERY GOOD';
+             }else if(marks >= 55){
+                grade ='C';
+                color = 'blue';
+                statement = 'GOOD';
+             }else if(marks >= 35){
+                grade ='S';
+                color = 'brown';
+                statement = 'SIMPLE';
+             }else if(marks < 35){
+                grade ='F';
+                color = 'black';
+                statement = 'WEAK';
+             }
+             document.getElementById('grade').value = grade;
+             document.getElementById('statement').innerHTML=statement;
+             document.getElementById('statement').style.color=color;
+   }
+ </script>
+</head>
+<body>
+   <div class="card-container">
+   <div class="header">
+   <h2>TASK 11</h2>
+   <div class="actions">
+   <div class="minimize">-</div>
+   <div class="close">X</div>
+   </div>
+   </div>
+   
+   <div class="card">
+   <div>
+    <form class="margin">
+     <table>
+    <tr>
+   <td><lable for="marks">MARKS</lable></td>
+   <td><input type="number" id="marks" name="marks"></td>
+   </tr>
+   <tr>
+   <td><lable for="grade">GRADE</lable></td>
+   <td><input type="text" id="grade" name="grade" readonly disabled></td>
+   </tr>
+   <tr>
+   <td><lable for="statement">STATEMENT</lable></td>
+   <td><lable id="statement" name="statement"></lable></td>
+   </tr>
+   <tr>
+   <div class="btn">
+      <td colspan="2" align="right"><input type="button" value="BUTTON 1" onclick="checkNumber();"></td>
+   </tr>
+   </div>
+   
+   </div>
+   </div>
+   </div>
+</body>
+</html>

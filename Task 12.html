@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tasks</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <style>
+        button{
+            width: 100%;
+          
+        }
+        .btn button {
+    width: 48.9%;
+}
+
+.card{
+    margin: 0 45px;
+}
+
+img{
+    width: 200px;
+    height: 160px;
+}
+    </style>
+    <div class="card-container">
+        <div class="header">
+            <h2>Task 12</h2>
+            <div class="actions">
+                <div class="minimize">-</div>
+                <div class="close">X</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="task3">
+                <table>
+                    <tr>
+                        <td><label for="num1">1st No</label></td>
+                        <td><input type="number" id="num1" name="num1"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="num2">2nd No</label></td>
+                        <td><input type="number" id="num2" name="num2"></td>
+                    </tr>
+                    <tr>
+                        <td><fieldset>
+                            <legend>Operation</legend>
+                            <input type="radio" name="task" value="add" id="add">
+                            <label for="add"> Add</label><br>
+                            <input type="radio" name="task" value="substract" id="substract">
+                            <label for="substract">Substract</label><br>
+                            <input type="radio" name="task" value="multiply" id="multiply">
+                            <label for="multiply">Multiply</label><br>
+                            <input type="radio" name="task" value="divide" id="divide">
+                            <label for="divide">Divide</label>
+                        </fieldset></td>
+
+                        <td><img src="download.jpeg" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="multiTasks()">Answer</button></td>
+                        <td><input type="number" id="total" name="total" readonly disabled></td>
+                    </tr>
+
+                    <tr>
+                       
+                        <td colspan="2"> 
+                            <div class="btn">
+                            <button onclick="clearAll()">Clear</button>
+                            <button >Exit</button>
+                 </div>
+                        </td>
+                    </tr>
+                </table>
+
+            </div><br>
+           
+        </div>
+    </div>
+</body>
+</html>
